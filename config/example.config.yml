@@ -1,0 +1,12 @@
+# Copy this file to config/config.yml and make changes as necessary.
+
+# `repos`: An array of Git repositories you want to search for commits.
+repos:
+    drupal100:
+        url: 'https://git.drupal.org/project/drupal.git'
+        branch: 10.0.x
+
+# `useragent`: Drupal.org API User-Agent string
+# The Drupal.org API requests that you use "an appropriate user agent string".
+# See: https://www.drupal.org/drupalorg/docs/apis/rest-and-other-apis
+useragent: '<YOUR_USERAGENT>'

@@ -1,0 +1,344 @@
+{
+    "nod_": {
+        "field_industries_worked_in": [
+            "Media",
+            "Education",
+            "Healthcare",
+            "Telecom",
+            "Energy",
+            "Web",
+            "Sports",
+            "Hosting"
+        ],
+        "field_organizations": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/570423",
+                "id": "570423",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/887766",
+                "id": "887766",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1294370",
+                "id": "1294370",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1480204",
+                "id": "1480204",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/570427",
+                "id": "570427",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1239259",
+                "id": "1239259",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/570429",
+                "id": "570429",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1481457",
+                "id": "1481457",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1485464",
+                "id": "1485464",
+                "resource": "field_collection_item"
+            }
+        ],
+        "field_bio": [],
+        "field_irc_nick": "nod_",
+        "field_websites": [
+            {
+                "url": "https:\/\/read.theodoreb.net\/",
+                "attributes": [],
+                "display_url": null
+            }
+        ],
+        "field_country": "FR",
+        "field_languages": [
+            "English",
+            "French"
+        ],
+        "field_terms_of_service": true,
+        "field_areas_of_expertise": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/taxonomy_term\/152801",
+                "id": "152801",
+                "resource": "taxonomy_term"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/taxonomy_term\/151991",
+                "id": "151991",
+                "resource": "taxonomy_term"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/taxonomy_term\/151101",
+                "id": "151101",
+                "resource": "taxonomy_term"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/taxonomy_term\/151105",
+                "id": "151105",
+                "resource": "taxonomy_term"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/taxonomy_term\/156099",
+                "id": "156099",
+                "resource": "taxonomy_term"
+            }
+        ],
+        "field_contributed": [
+            "patches",
+            "modules",
+            "issues",
+            "drupalorg",
+            "documentation",
+            "translations",
+            "drupalcon",
+            "tests",
+            "services",
+            "irc"
+        ],
+        "field_events_attended": [
+            "munich_2012",
+            "prague_2013",
+            "amsterdam_2014",
+            "barcelona_2015",
+            "dublin_2016",
+            "vienna_2017",
+            "amsterdam_2019",
+            "barcelona_2020"
+        ],
+        "field_mentors": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/147331",
+                "id": "147331",
+                "resource": "user"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/24967",
+                "id": "24967",
+                "resource": "user"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/157725",
+                "id": "157725",
+                "resource": "user"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/65776",
+                "id": "65776",
+                "resource": "user"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/99777",
+                "id": "99777",
+                "resource": "user"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/161058",
+                "id": "161058",
+                "resource": "user"
+            }
+        ],
+        "field_drupal_contributions": {
+            "value": "<p><a href=\"https:\/\/drupal.org\/node\/2088121\" rel=\"nofollow\">Got rid of the overlay<\/a> and <a href=\"https:\/\/www.drupal.org\/node\/2182153\" rel=\"nofollow\">rewrote all core javascript docs to JSDoc<\/a>.<\/p>\n<p>Anything javascript. And maps.<br \/>\nI'm one of the javascript maintainer for Drupal<\/p>",
+            "format": "1"
+        },
+        "field_first_name": "Th\u00e9odore",
+        "field_last_name": "Biadala",
+        "og_user_node": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/2826126",
+                "id": "2826126",
+                "resource": "node"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/3182113",
+                "id": "3182113",
+                "resource": "node"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/2972128",
+                "id": "2972128",
+                "resource": "node"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/3215637",
+                "id": "3215637",
+                "resource": "node"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/3215644",
+                "id": "3215644",
+                "resource": "node"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/3215645",
+                "id": "3215645",
+                "resource": "node"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/3215648",
+                "id": "3215648",
+                "resource": "node"
+            }
+        ],
+        "field_da_ind_membership": "Current",
+        "field_da_join_date": "1335769200",
+        "field_da_expiration_date": "1681549435",
+        "field_shared_account_for_an_org": false,
+        "field_user_pronouns": "he\/him",
+        "field_user_location": "Lille",
+        "field_user_primary_language": "French",
+        "field_user_comment_meta": [
+            "language",
+            "location"
+        ],
+        "field_slack": null,
+        "field_contribution_role": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1493083",
+                "id": "1493083",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1493084",
+                "id": "1493084",
+                "resource": "field_collection_item"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1493085",
+                "id": "1493085",
+                "resource": "field_collection_item"
+            }
+        ],
+        "og_membership": [],
+        "og_membership__1": [],
+        "og_membership__2": [],
+        "og_membership__3": [],
+        "og_user_node__og_membership": [],
+        "og_user_node__og_membership__1": [],
+        "og_user_node__og_membership__2": [],
+        "og_user_node__og_membership__3": [],
+        "uid": "598310",
+        "name": "nod_",
+        "url": "https:\/\/www.drupal.org\/u\/nod_",
+        "edit_url": "https:\/\/www.drupal.org\/user\/598310\/edit",
+        "created": "1253007324",
+        "language": "en",
+        "feeds_item_guid": null,
+        "feeds_item_url": null,
+        "feed_nid": null,
+        "flag_sid": 0,
+        "multiple_email": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/multiple_email\/1014636",
+                "id": 1014636,
+                "resource": "multiple_email"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/multiple_email\/2043170",
+                "id": 2043170,
+                "resource": "multiple_email"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/multiple_email\/2249600",
+                "id": 2249600,
+                "resource": "multiple_email"
+            },
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/multiple_email\/3671830",
+                "id": 3671830,
+                "resource": "multiple_email"
+            }
+        ]
+    },
+    "hooroomoo": {
+        "field_industries_worked_in": [],
+        "field_organizations": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/field_collection_item\/1503429",
+                "id": "1503429",
+                "resource": "field_collection_item"
+            }
+        ],
+        "field_bio": [],
+        "field_irc_nick": null,
+        "field_websites": [],
+        "field_country": "US",
+        "field_languages": [],
+        "field_terms_of_service": true,
+        "field_areas_of_expertise": [],
+        "field_contributed": [],
+        "field_events_attended": [
+            "europe_2021"
+        ],
+        "field_mentors": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/user\/2369194",
+                "id": "2369194",
+                "resource": "user"
+            }
+        ],
+        "field_drupal_contributions": [],
+        "field_first_name": "Harumi",
+        "field_last_name": "Jang",
+        "og_user_node": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/node\/3272089",
+                "id": "3272089",
+                "resource": "node"
+            }
+        ],
+        "field_da_ind_membership": null,
+        "field_da_join_date": null,
+        "field_da_expiration_date": null,
+        "field_shared_account_for_an_org": false,
+        "field_user_pronouns": "they\/them",
+        "field_user_location": null,
+        "field_user_primary_language": null,
+        "field_user_comment_meta": [
+            "pronouns"
+        ],
+        "field_slack": null,
+        "field_contribution_role": [],
+        "og_membership": [],
+        "og_membership__1": [],
+        "og_membership__2": [],
+        "og_membership__3": [],
+        "og_user_node__og_membership": [],
+        "og_user_node__og_membership__1": [],
+        "og_user_node__og_membership__2": [],
+        "og_user_node__og_membership__3": [],
+        "uid": "3688872",
+        "name": "hooroomoo",
+        "url": "https:\/\/www.drupal.org\/u\/hooroomoo",
+        "edit_url": "https:\/\/www.drupal.org\/user\/3688872\/edit",
+        "created": "1631653195",
+        "language": "en",
+        "feeds_item_guid": null,
+        "feeds_item_url": null,
+        "feed_nid": null,
+        "flag_sid": 0,
+        "multiple_email": [
+            {
+                "uri": "https:\/\/www.drupal.org\/api-d7\/multiple_email\/4105137",
+                "id": 4105137,
+                "resource": "multiple_email"
+            }
+        ]
+    }
+}
