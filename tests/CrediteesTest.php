@@ -30,7 +30,8 @@ class CrediteesTest extends TestCase
         $uniqueCreditees = [
             'nod_',
             'hooroomoo',
-            'notavalidusername'
+            'notavalidusername',
+            'apaderno',
         ];
         $validatedCreditees = $this->creditees->validateCreditees($uniqueCreditees);
         $this->assertIsArray($validatedCreditees);

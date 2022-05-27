@@ -8,4 +8,5 @@ use Symfony\Component\Console\Application;
 $application = new Application();
 $application->add(new \Balsama\Dealth\Commands\GatherCommits());
 $application->add(new \Balsama\Dealth\Commands\GatherCreditees());
+$application->add(new \Balsama\Dealth\Commands\ProcessStats());
 $application->run();

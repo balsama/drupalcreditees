@@ -18,10 +18,17 @@ https://drive.google.com/drive/folders/1J1-WjiCKrDApMte7PBeVQ0eOgtgGf-3n?usp=sha
 3. Run the following commands:
 
 #### To generate the `commits.json` file:
-* `$ php ./bin/app.php gather-commits`
+* `$ php ./bin/app.php gather:commits`
 
 #### To generate the `creditees.json` file:
-* `$ php ./bin/app.php gather-creditees`
+* `$ php ./bin/app.php gather:creditees`
+
+#### To generate the `creditees.json` file:
+* `$ php ./bin/app.php process:stats --generate <CALLABLE_FUNCTION>`  
+    Callable function examples:
+    * `recentNewCreditees`
+    * `crediteesByMonth`  
+      These are currently hardcoded to output files in certain directories.
 
 ## Formats
 ## `creditees.json`

@@ -10,3 +10,10 @@ repos:
 # The Drupal.org API requests that you use "an appropriate user agent string".
 # See: https://www.drupal.org/drupalorg/docs/apis/rest-and-other-apis
 useragent: '<YOUR_USERAGENT>'
+
+# A list of `incorrect: correct` usernames where any name appearing the old list will credit the "new" name in addition
+# to mappings which are already captured here: https://raw.githubusercontent.com/lauriii/drupalcores/master/app/config/name_mappings.yml
+# Inactive/old usernames will never be included in results of this library regadless of whether they are mapped to new
+# usernames here.
+additionalnamemappings:
+    incorrectname: correctname

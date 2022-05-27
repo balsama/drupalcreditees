@@ -12,7 +12,8 @@ use Symfony\Component\Console\Helper\ProgressBar;
 class GatherCommits extends Command
 {
 
-    protected static $defaultName = 'gather-commits';
+    protected static $defaultName = 'gather:commits';
+    protected static $defaultDescription = 'Gathers commits from repos in config.yml and outputs the results to a json file.';
 
     private Commits $repos;
 
