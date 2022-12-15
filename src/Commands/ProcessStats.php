@@ -119,6 +119,35 @@ class ProcessStats extends Command
         return $months;
     }
 
+    public function topContributors(int $after = null, int $before = null)
+    {
+        $contributors = [];
+        if (!$after) {
+            $after = strtotime('2021-11-30'); // Date D10 was opened.
+        }
+        if (!$before) {
+            $before = time();
+        }
+        foreach ($this->commits as $commit) {
+            $commitTimestamp = strtotime($commit->date->date);
+            if ($commitTimestamp > $before) {
+                continue;
+            }
+            if ($commitTimestamp < $after) {
+                continue;
+            }
+            foreach ($commit->creditees as $creditee) {
+                $contributors[$creditee][$commit->issueNumber][] = $commit->hash;
+            }
+        }
+        arsort($contributors);
+        $topContributors = array_slice($contributors, 0, 100);
+        foreach ($topContributors as $name => $contributorCommits) {
+            $processedTopContributors[$name] = [$name, count($contributorCommits)];
+        }
+        Helpers::writeToCsv(['name', 'credits'], $processedTopContributors, 'topD10-drupalOnly.csv');
+    }
+
     private function initializeMonths()
     {
         $months = [];
