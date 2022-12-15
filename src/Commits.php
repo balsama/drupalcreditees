@@ -75,12 +75,14 @@ class Commits extends GatherBase
 
     public function gatherCommitsFromRepos()
     {
-        $commits = [];
+        $allCommits = [];
         foreach ($this->repos as $repo) {
             $log = $repo->getLog();
-            $commits = array_merge($log->getCommits(), $this->commits);
+            $commits = $log->getCommits();
+            $allCommits = array_merge($allCommits, $commits);
         }
-        return $commits;
+        $this->commits = $allCommits;
+        return $allCommits;
     }
 
     public function extractIssueNumberFromCommitMessage($commitMessage)
