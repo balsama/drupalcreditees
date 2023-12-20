@@ -89,6 +89,36 @@ class ProcessStats extends Command
 
     public function crediteesByMonth()
     {
+        $months = $this->initializeMonthsWithCustomKeys(['uniqueCreditees' => []]);
+        foreach ($this->commits as $commit) {
+            $commitMonth = substr($commit->date->date, 0, 7);
+            foreach ($commit->creditees as $creditee) {
+                $months[$commitMonth]['uniqueCreditees'][$creditee] = 0;
+            }
+        }
+        foreach ($months as $month) {
+            $count = count($month['uniqueCreditees']);
+            $months[$month[0]]['uniqueCreditees'] = $count;
+        }
+        Helpers::writeToCsv(['month', 'creditees'], $months, 'all-creditees-by-month.csv');
+    }
+
+    public function issuesClosedPerMonth()
+    {
+        $months = $this->initializeMonthsWithCustomKeys(['uniqueIssuesClosed' => []]);
+        foreach ($this->commits as $commit) {
+            $commitMonth = substr($commit->date->date, 0, 7);
+            $months[$commitMonth]['uniqueIssuesClosed'][$commit->issueNumber] = 0;
+        }
+        foreach ($months as $month) {
+            $count = count($month['uniqueIssuesClosed']);
+            $months[$month[0]]['uniqueIssuesClosed'] = $count;
+        }
+        Helpers::writeToCsv(['month', 'closed issue count'], $months, 'issues-closed-by-month.csv');
+    }
+
+    public function newCrediteesByMonth()
+    {
         $months = $this->findNewCrediteesByMonth();
         foreach ($months as $month => $values) {
             unset($months[$month]['ages']);
@@ -102,7 +132,11 @@ class ProcessStats extends Command
 
     private function findNewCrediteesByMonth()
     {
-        $months = $this->initializeMonths();
+        $months = $this->initializeMonthsWithCustomKeys([
+            'count' => 0,
+            'ages' => [],
+            'averageAge' => 0,
+        ]);
         foreach ($this->creditees as $creditee) {
             $firstCommitDate = new \DateTime();
             $firstCommitDate->setTimestamp($creditee->firstCommitTimestamp);
@@ -148,20 +182,19 @@ class ProcessStats extends Command
         Helpers::writeToCsv(['name', 'credits'], $processedTopContributors, 'topD10-drupalOnly.csv');
     }
 
-    private function initializeMonths()
+    private function initializeMonthsWithCustomKeys(array $additionalKeysValues = [], int $startTimestamp = 946702800): array
     {
         $months = [];
         $date = new \DateTime();
-        $date->setTimestamp(946702800);
+        $date->setTimestamp($startTimestamp);
         while ($date->getTimestamp() < time()) {
             $month = $date->format('Y-m');
-            $months[$month]['count'] = 0;
-            $months[$month]['ages'] = [];
-            $months[$month]['averageAge'] = 0;
+            foreach ($additionalKeysValues as $key => $defaultValue) {
+                $months[$month][$key] = $defaultValue;
+            }
             $date->add(\DateInterval::createFromDateString('1 month'));
         }
         $months = Helpers::includeArrayKeysInArray($months);
         return $months;
     }
-
 }
